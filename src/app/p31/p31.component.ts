@@ -11,5 +11,10 @@ export class P31Component implements OnInit {
 
   ngOnInit(): void {
   }
-
+  p32=false
+  p31=true
+  p31f=false
+  p31r=false
+  p31b=false
+  p311=false
 }

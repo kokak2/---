@@ -57,7 +57,7 @@
             <div class="false marg-bot" *ngIf="p3f">არასწორია. უნდა გამოგეთვალა JKL სამკუთხედის მესამე კუთხე, რომელიც ტოლობის ნიშანს გაპოვნინებდა.</div>
             <button class="but" *ngIf="p3f" (click)="p3f=false; p3b=false; p31=true; p3=false" >შემდეგი</button>
             <div class="true marg-bot" *ngIf="p3r">სწორია</div>
-            <button class="but" *ngIf="p3r" (click)="p4=true; p3=false" >შემდეგი</button>
+            <button class="but" *ngIf="p3r" (click)="p33=true; p3=false" >შემდეგი</button>
             <button *ngIf="!p3b" class="but marg-bot" (click)="p3f=true; p3b=true">
                 1) ABC და DEF
             </button>
@@ -73,6 +73,6 @@
         </section>
     </div>
 </div>  
-<app-p4 *ngIf="p4"></app-p4>
+<app-p33 *ngIf="p33"></app-p33>
 <app-p31 *ngIf="p31"></app-p31>
 

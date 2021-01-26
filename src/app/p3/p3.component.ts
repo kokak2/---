@@ -11,7 +11,7 @@ export class P3Component implements OnInit {
 
   ngOnInit(): void {
   }
-  p4=false
+  p33=false
   p3=true
   p3f=false
   p3r=false

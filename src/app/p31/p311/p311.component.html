@@ -1,4 +1,4 @@
-<div *ngIf="p31" class="background">
+<div *ngIf="p311" class="background">
     <div class="background-2 pad-t-b pad pad-left pad-rig">
         <h3 class="marg-bot">იპოვეთ ტოლი სამკუთხედები</h3>
         <section class="flex">
@@ -12,6 +12,7 @@
                 <p class="abs size" style="top:54px; left: 51px; transform: rotate(60deg)">100</p>
                 <p class="abs size" style="top:122px; left: 33px; transform: rotate(0deg)">87</p>
                 <p class="abs size" style="top:60px; left: -7px; transform: rotate(-72deg)">94</p>
+                
             </div>
             <div class="rel b1 marg-bot">
                 <div class="line abs" style="top: 75%; width: 80px; left: 0px;"></div>
@@ -24,17 +25,7 @@
                 <p class="abs size" style="top:122px; left: 33px; transform: rotate(0deg)">88</p>
                 <p class="abs size" style="top:60px; left: -7px; transform: rotate(-72deg)">94</p>
             </div>
-            <div class="rel b1 marg-bot">
-                <div class="line abs" style="top: 75%; width: 80px; left: 0px;"></div>
-                <div class="line abs" style="width: 100px; top: 46%; left: 4px; transform: rotate(60deg);"></div>
-                <div class="line-2 abs" style="width: 94px; top: 46%; left: -33px; transform: rotate(-72deg);"></div>
-                <p class="abs" style="top:7px; left: 17px;">G</p>
-                <p class="abs" style="top:106px; left: -17px;">H</p>
-                <p class="abs" style="top:107px; left: 83px;">I</p>
-                <p class="abs size" style="top:54px; left: 51px; transform: rotate(60deg)">100</p>
-                <p class="abs size" style="top:122px; left: 33px; transform: rotate(0deg)">88</p>
-                <p class="abs size" style="top:60px; left: -7px; transform: rotate(-72deg)">93</p>
-            </div>
+            
             <div class="rel b1 marg-bot">
                 <div class="line abs" style="top: 75%; width: 80px; left: 0px;"></div>
                 <div class="line abs" style="width: 100px; top: 46%; left: 4px; transform: rotate(60deg);"></div>
@@ -48,31 +39,31 @@
             </div>
         </section>   
         <section>
-            <div class="false marg-bot" *ngIf="p31f">არასწორია. ტოლ სამკუთხედებში შესაბამისი გვერდები ტოლია, კარგად დააკვირდი!</div>
-            <button class="but" *ngIf="p31f" (click)="p31f=false; p31b=false; p311=true; p31=false" >შემდეგი</button>
-            <div class="true marg-bot" *ngIf="p31r">სწორია</div>
-            <button class="but" *ngIf="p31r" (click)="p32=true; p31=false" >შემდეგი</button>
-            <button *ngIf="!p31b" class="but marg-bot" (click)="p31f=true; p31b=true">
-                1) GHI და DEF
+            <div class="false marg-bot" *ngIf="p311f">არასწორია. ტოლ სამკუთხედებში შესაბამისი გვერდები ტოლია, კარგად დააკვირდი!</div>
+            <button class="but" *ngIf="p311f" (click)="p311f=false; p311b=false; p311=true;" >შემდეგი</button>
+           
+            <div class="true marg-bot" *ngIf="p311r">სწორია</div>
+            <button class="but" *ngIf="p311r" (click)="p312=true; p311=false" >შემდეგი</button>
+           
+            <button *ngIf="!p311b" class="but marg-bot" (click)="p311f=true; p311b=true">
+                1) არცერთი სამკუთხედი არ არის ტოლი
             </button>
-            <button *ngIf="!p31b" class="but marg-bot" (click)="p31f=true; p31b=true">
-                2) GHI და JKL
+            <button *ngIf="!p311b" class="but marg-bot" (click)="p311r=true; p311b=true">
+                2) DEF და JKL
             </button>
-            <button *ngIf="!p31b" class="but marg-bot" (click)="p31f=true; p31b=true">
+            <button *ngIf="!p311b" class="but marg-bot" (click)="p311f=true; p311b=true">
                 3) ABC და GHI
             </button>
-            <button *ngIf="!p31b" class="but marg-bot" (click)="p31f=true; p31b=true">
+            <button *ngIf="!p311b" class="but marg-bot" (click)="p311f=true; p311b=true">
                 4) JKL და ABC
             </button>
-            <button *ngIf="!p31b" class="but marg-bot" (click)="p31f=true; p31b=true">
+            <button *ngIf="!p311b" class="but marg-bot" (click)="p311f=true; p311b=true">
                 5) ABC და DEF
             </button>
-            <button *ngIf="!p31b" class="but marg-bot" (click)="p31r=true; p31b=true">
-                6) JKL და DEF
+            <button *ngIf="!p311b" class="but marg-bot" (click)="p311f=true; p311b=true">
+                6) ყველა სამკუთხედი ტოლია.
             </button>
         </section>
     </div>
 </div>  
-<app-p311 *ngIf="p311"></app-p311>
-<app-p32 *ngIf="p32"></app-p32>
-
+<app-p312 *ngIf="p312"></app-p312>
